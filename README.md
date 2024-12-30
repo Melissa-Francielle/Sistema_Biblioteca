@@ -1,4 +1,7 @@
-# Sistema Biblioteca
+
+# Sistema Biblioteca  
+## Universidade Estadual do Norte do Paraná - Projeto final da disciplina de Engenharia de Software 3º ano do Curso de Ciência da Computação.
+Aluna: Melisa Francielle dos Santos 
 
 O projeto **Sistema_Biblioteca** é uma aplicação desenvolvida em Java que utiliza JavaFX para a interface gráfica e JDBC para a interação com o banco de dados PostgreSQL, além de estar utilizando a Arquitetura em camadas com padrão arquitetural MVC. O objetivo principal do sistema é gerenciar empréstimos e devoluções de livros em uma biblioteca, permitindo o cadastro de alunos, livros e o controle das transações de empréstimo e devolução.
 
