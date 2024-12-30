@@ -1,6 +1,6 @@
 # Sistema Biblioteca
 
-O projeto **Sistema_Biblioteca** é uma aplicação desenvolvida em Java que utiliza JavaFX para a interface gráfica e JDBC para a interação com o banco de dados PostgreSQL. O objetivo principal do sistema é gerenciar empréstimos e devoluções de livros em uma biblioteca, permitindo o cadastro de alunos, livros e o controle das transações de empréstimo e devolução.
+O projeto **Sistema_Biblioteca** é uma aplicação desenvolvida em Java que utiliza JavaFX para a interface gráfica e JDBC para a interação com o banco de dados PostgreSQL, além de estar utilizando a Arquitetura em camadas com padrão arquitetural MVC. O objetivo principal do sistema é gerenciar empréstimos e devoluções de livros em uma biblioteca, permitindo o cadastro de alunos, livros e o controle das transações de empréstimo e devolução.
 
 ## Funcionalidades Princípais
 
@@ -16,6 +16,20 @@ O projeto está organizado nos seguintes pacotes:
 - **app**: Contém as classes principais responsáveis pela interface gráfica e controle de fluxo da aplicação, como `RealizaEmprestimoController` e `RealizaDevolucaoControl`.
 - **dao**: Inclui as classes de acesso a dados (Data Access Objects) que interagem com o banco de dados PostgreSQL, como `AlunoDao`, `LivroDao`, `EmprestimoDao`, `DebitoDao` e `DevolucaoDao`.
 - **util**: Abriga classes utilitárias, como `AlertMessage`, que facilita a exibição de alertas na interface gráfica.
+
+### Organização do Código
+O projeto é estruturado em camadas seguindo o padrão arquitetural MVC:
+
+- **Model**: [Model](https://github.com/Melissa-Francielle/Sistema_Biblioteca/tree/main/src/main/java/modelo)
+  - Contém as classes responsáveis pela lógica de negócio e representação dos dados.
+- **View**: [View](https://github.com/Melissa-Francielle/Sistema_Biblioteca/tree/main/src/main/resources/app)
+  - Define a interface gráfica e interação com o usuário.
+- **Controller**: [Controller](https://github.com/Melissa-Francielle/Sistema_Biblioteca/tree/main/src/main/java/app)
+  - Gerencia a comunicação entre a View e o Model, processando eventos e ações do usuário.
+- **DAO**: [DAO](https://github.com/Melissa-Francielle/Sistema_Biblioteca/tree/main/src/main/java/dao)
+  - Realiza o acesso ao banco de dados, incluindo as operações de CRUD (Create, Read, Update, Delete).
+- **UTIL**: [UTIL](https://github.com/Melissa-Francielle/Sistema_Biblioteca/tree/main/src/main/java/util)
+  - Contém funções utilitárias e de suporte ao sistema.
 
 ## Requisitos
 
