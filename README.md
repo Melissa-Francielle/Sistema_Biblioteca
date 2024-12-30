@@ -2,6 +2,12 @@
 
 O projeto **Sistema_Biblioteca** é uma aplicação desenvolvida em Java que utiliza JavaFX para a interface gráfica e JDBC para a interação com o banco de dados PostgreSQL, além de estar utilizando a Arquitetura em camadas com padrão arquitetural MVC. O objetivo principal do sistema é gerenciar empréstimos e devoluções de livros em uma biblioteca, permitindo o cadastro de alunos, livros e o controle das transações de empréstimo e devolução.
 
+### PDF explicando algumas questões do projeto:
+[PROJETO](https://github.com/Melissa-Francielle/Sistema_Biblioteca/blob/main/PROJETO%20FINAL%20-%20Trabalho%20descrição.pdf)
+
+### DIAGRAMAS DO PROJETO PARA DOWNLOAD
+[DIAGRAMAS ASTAH](https://github.com/Melissa-Francielle/Sistema_Biblioteca/blob/main/Diagramas_SisBilioteca.asta) 
+
 ## Funcionalidades Princípais
 
 - **Cadastro de Alunos**: Permite o registro de novos alunos no sistema, incluindo informações como matrícula, nome e curso.
