@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="app.RealizarDevolucao" prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <VBox spacing="10.0" alignment="CENTER" layoutX="20.0" layoutY="20.0" prefWidth="560.0">
+            <children>
+                <HBox spacing="10.0" alignment="CENTER_LEFT">
+                    <children>
+                        <Label text="Matrícula:" />
+                        <TextField fx:id="inputMatricula" promptText="Digite a matrícula" prefWidth="200.0" />
+                        <Button fx:id="btnPesquisar" text="Pesquisar" onAction="#pesquisarEmprestimos" />
+                    </children>
+                </HBox>
+                <!-- Tabela para exibir itens de devolução -->
+                <TableView fx:id="tabelaItensDevolucao" prefHeight="250.0" prefWidth="560.0">
+                    <columns>
+                        <TableColumn fx:id="colunaLivro" text="Livro" prefWidth="250.0" />
+                        <TableColumn fx:id="colunaMulta" text="Multa (R$)" prefWidth="150.0" />
+                        <TableColumn fx:id="colunaDiasAtraso" text="Dias de Atraso" prefWidth="150.0" />
+                    </columns>
+                </TableView>
+                
+                <!-- Botão para realizar devolução -->
+                <Button fx:id="btnDevolver" text="Realizar Devolução" prefWidth="200.0" onAction="#realizarDevolucao" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
