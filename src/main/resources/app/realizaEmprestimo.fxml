@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="20" style="-fx-background-color: #f4f4f4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.RealizaEmprestimoController">
+
+    <!-- Content -->
+    <VBox alignment="CENTER" spacing="20" style="-fx-padding: 20; flex-grow: 1; -fx-background-color: #000000;">
+        <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Emprestar Livros" textFill="WHITE" />
+        
+        <!-- Form -->
+        <VBox spacing="15" style="-fx-background-color: white; -fx-padding: 20; -fx-border-radius: 5; -fx-border-color: #000000;">
+            <Label text="Matricula do Aluno:" />
+            <TextField fx:id="txtMatricula" promptText="Digite o RA do Aluno" style="-fx-padding: 10; -fx-border-radius: 5; -fx-border-color: #ddd;" />
+            
+            <Label text="Código do Livro:" />
+            <TextField fx:id="txtLivros" promptText="Digite o Código do Livro" style="-fx-padding: 10; -fx-border-radius: 5; -fx-border-color: #ddd;" />
+            <Button onAction="#emprestar" style="-fx-background-color: #000000; -fx-text-fill: white; -fx-padding: 10; -fx-background-radius: 5; -fx-hover-color: #2980b9;" text="Cadastrar" />
+            
+            <Button onAction="#voltarAoMenu" style="-fx-background-color: #000000; -fx-text-fill: white; -fx-padding: 10; -fx-background-radius: 5; -fx-hover-color: #2980b9;" text="Cancelar" />
+        </VBox>
+    </VBox>
+
+</VBox>
