@@ -2,7 +2,7 @@
 
 O projeto **Sistema_Biblioteca** é uma aplicação desenvolvida em Java que utiliza JavaFX para a interface gráfica e JDBC para a interação com o banco de dados PostgreSQL. O objetivo principal do sistema é gerenciar empréstimos e devoluções de livros em uma biblioteca, permitindo o cadastro de alunos, livros e o controle das transações de empréstimo e devolução.
 
-## Funcionalidades
+## Funcionalidades Princípais
 
 - **Cadastro de Alunos**: Permite o registro de novos alunos no sistema, incluindo informações como matrícula, nome e curso.
 - **Cadastro de Livros**: Possibilita a adição de novos livros ao acervo da biblioteca, com detalhes como título, autor e disponibilidade.
